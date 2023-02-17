@@ -38,9 +38,13 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+<<<<<<< Updated upstream
   'history-substring-search' \
+  'prompt'
+=======
   'prompt' \
   'git'
+>>>>>>> Stashed changes
 
 #
 # Autosuggestions
