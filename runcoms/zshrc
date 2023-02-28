@@ -11,3 +11,21 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "$HOME/.cargo/env"
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+
+# AWS authenticator for accessing EKS clusters
+export PATH=/usr/local/aws-cli/v2/current/bin:$PATH
+export PATH=$PATH:$HOME/.aws/bin:$HOME/.pulumi/bin
+export PATH=$PATH:/home/ubuntu/.linkerd2/bin
+
+cd ~/src/modal
+source venv/bin/activate
+
+export VISUAL=nvim
