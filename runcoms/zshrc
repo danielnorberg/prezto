@@ -25,7 +25,12 @@ export PATH=/usr/local/aws-cli/v2/current/bin:$PATH
 export PATH=$PATH:$HOME/.aws/bin:$HOME/.pulumi/bin
 export PATH=$PATH:/home/ubuntu/.linkerd2/bin
 
+setopt PROMPT_SP
+export PROMPT_EOL_MARK=""
+
 cd ~/src/modal
 source venv/bin/activate
 
 export VISUAL=nvim
+
+export PATH=$HOME/.local/bin:$PATH
